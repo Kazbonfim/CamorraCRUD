@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - CamorraCRUD</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
+    <header id="header" style="padding: 20px;">
+        <h1>Camorra<span style="font-size: 70px;">CRUD</span></h1>
+    </header>
+    <!-- Container principal para centralizar o formulário -->
+    <div id="cadastro"
+        style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 400px; width: 100%; box-sizing: border-box;">
+        <!-- Título principal da página de cadastro -->
+        <h2 id="titulo" style="margin: 0 0 10px; color: #333;">Criar conta 📝</h2>
+
+        <!-- Formulário para envio de dados -->
+        <form action="/register" method="post">
+            <!-- Campo para o nome de usuário -->
+            <input placeholder="Digite um usuário" type="text" id="usuario" name="usuario" required
+                style="width: calc(100% - 22px); padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+
+            <!-- Subtítulo para a seção de senha -->
+            <h3 style="margin: 0 0 10px; color: #333;">Digite sua senha 🔐</h3>
+
+            <fieldset class="pure-group" style="border: none;">
+                <!-- Campo para a senha -->
+                <input placeholder="Escolha uma senha" type="password" id="senha" name="senha" required
+                    style="width: calc(100% - 22px); padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+
+                <!-- Campo para confirmar a senha -->
+                <input placeholder="Confirme sua senha" type="password" id="confirmar-senha" name="confirmar_senha"
+                    required
+                    style="width: calc(100% - 22px); padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+            </fieldset>
+
+            <!-- Botão para enviar o formulário -->
+            <button type="submit" class="pure-button pure-button-primary"
+                style="width: 100%; padding: 10px; border: none; border-radius: 4px; background-color: #007bff; color: white; font-size: 16px; cursor: pointer;">Cadastrar</button>
+        </form>
+
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+body {
+  /* Reset de padding */
+  padding: 0px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bluey {
+  color: #00B7FF;
+}

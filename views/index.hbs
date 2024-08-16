@@ -1,0 +1,30 @@
+{{!-- Header com logotipo padrão das páginas, tente não modificar por nada! --}}
+<div
+    style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh; text-align: center;">
+    <header id="header">
+        <h1>Camorra<span style="font-size: 70px;">CRUD</span></h1>
+    </header>
+
+    <main id="playground" style="margin-top: 20px;">
+        <form class="pure-form" style="display: inline-block;" action="#<!-- Definir rota de envio -->" method="POST">
+            <fieldset>
+                <legend class="bluey">Informe seus dados antes de prosseguirmos</legend>
+                {{!-- Botão --}}
+                <input type="text" placeholder="Login" name="key" value="" required
+                    style="padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 4px; width: 100%; max-width: 300px;">
+                <input type="password" placeholder="Senha" name="key" value="" required
+                    style="padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 4px; width: 100%; max-width: 300px;">
+                <br>
+                <button type="submit" value="Cadastrar" class="pure-button pure-button-primary">Entrar</button>
+                <button class="pure-button pure-button-primary">
+                    <a href="/register" class="button-link" style="color: white; text-decoration: none;">Registrar</a>
+                </button>
+            </fieldset>
+        </form>
+
+        <div class="bluey" style="text-align: center; border: 1px solid grey; width: 30em;">
+            <p>Esse projeto ainda está em desenvolvimento, então, alguns bugs podem ser encontrados. Caso encontre
+                alguma coisa, pode reportar clicando aqui <a href="mailto:zcry.games@gmail.com">aqui</a></p>
+        </div>
+
+    </main>
